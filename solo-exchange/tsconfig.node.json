@@ -1,24 +1,10 @@
 {
+  // Compiler options for the TypeScript project
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "composite": true, // Enables project references
+    "module": "esnext", // Specifies the module code generation
+    "moduleResolution": "node" // Resolves modules in Node.js style
   },
-  "include": ["vite.config.ts"]
+  // Files to include in the compilation
+  "include": ["vite.config.ts"] // Includes the Vite configuration file
 }

@@ -1,7 +1,38 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    // Specify ECMAScript target version
+    "target": "ESNext",
+    // Use define property semantics for class fields
+    "useDefineForClassFields": true,
+    // Specify library files to be included in the compilation
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    // Disallow JavaScript files
+    "allowJs": false,
+    // Skip type checking of declaration files
+    "skipLibCheck": true,
+    // Disable synthetic ES module interop
+    "esModuleInterop": false,
+    // Allow default imports from modules with no default export
+    "allowSyntheticDefaultImports": true,
+    // Enable all strict type-checking options
+    "strict": true,
+    // Ensure consistent casing in file names
+    "forceConsistentCasingInFileNames": true,
+    // Specify module code generation
+    "module": "ESNext",
+    // Specify module resolution strategy
+    "moduleResolution": "Node",
+    // Allow importing .json files
+    "resolveJsonModule": true,
+    // Treat each file as a separate module
+    "isolatedModules": true,
+    // Disable emitting output files
+    "noEmit": true,
+    // Specify JSX code generation
+    "jsx": "react-jsx"
+  },
+  // Include the specified files in the project
+  "include": ["src"],
+  // Reference another configuration file
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
