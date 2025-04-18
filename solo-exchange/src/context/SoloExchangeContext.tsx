@@ -8,7 +8,7 @@ const { ethereum } = window;
 // Helper function to create a contract instance using ethers.js
 const createEthereumContract = () => {
 	if (!ethereum) {
-		alert("Please install MetaMask.");
+		alert("Please Install MetaMask....");
 		return null;
 	}
 	const provider = new ethers.providers.Web3Provider(ethereum);
@@ -45,7 +45,7 @@ export const SoloExchangeContextProvider = ({ children }: { children: any }) => 
 	// Function to connect the user's wallet
 	const connectWallet = async () => {
 		try {
-			if (!ethereum) return alert("Please install MetaMask.");
+			if (!ethereum) return alert("Please Install MetaMask....");
 
 			const accounts: string[] = await ethereum.request({
 				method: "eth_requestAccounts",
