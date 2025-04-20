@@ -3,6 +3,21 @@ import { ethers } from "ethers";
 import { contractAbi, contractAddress } from "../utils/constants";
 import { Deal } from "../@types/Deal";
 
+interface SoloExchangeContextType {
+	currentAccount: string;
+	deals: Deal[];
+	getDeals: () => Promise<void>;
+	postDeals: (
+		email: string,
+		item: string,
+		description: string,
+		price: string,
+		url: string
+	) => Promise<void>;
+	connectWallet: () => Promise<void>;
+	sendMoney: (deal: Deal) => Promise<void>;
+}
+
 const { ethereum } = window;
 
 // Helper function to create a contract instance using ethers.js
@@ -23,7 +38,8 @@ const createEthereumContract = () => {
 };
 
 // Create a context for the SoloExchange application
-export const SoloExchangeContext = createContext({}) as any;
+// export const SoloExchangeContext = createContext({}) as any;
+export const SoloExchangeContext = createContext<SoloExchangeContextType | null>(null);
 
 // Context provider component for managing state and providing functions
 export const SoloExchangeContextProvider = ({ children }: { children: any }) => {

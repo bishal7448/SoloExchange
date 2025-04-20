@@ -18,8 +18,18 @@ const DealForm = () => {
     price: "",
     url: "",
   } as FormData);
-  const { postDeals, getDeals } = useContext(SoloExchangeContext);
 
+  // const { postDeals, getDeals } = useContext(SoloExchangeContext);
+  
+  const context = useContext(SoloExchangeContext);
+
+  if (!context) {
+    return <div>Loading context...</div>;
+  }
+
+  const { postDeals, getDeals } = context;
+
+  
   const navigate = useNavigate();
 
   const handleSubmit = () => {
