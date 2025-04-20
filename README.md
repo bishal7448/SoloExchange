@@ -25,7 +25,7 @@ The project adopts a modern full-stack architecture:
 - *Storage*: IPFS for media & metadata
 - *Wallet Integration*: MetaMask / WalletConnect -->
 
-## Due some issue in Netlify the deploy link isn't work. So please host the webapp locally in your system. For this we give a quick start bellow. Our team try to fix the issue
+## Hey Hack4Bengal team due some issue in Netlify the deploy link isn't work. So please host the webapp locally in your system. For this we give a quick start bellow. Our team try to fix the issue.
 
 ## 🔧 Quick Start
 
