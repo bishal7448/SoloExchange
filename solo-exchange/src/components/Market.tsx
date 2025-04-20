@@ -4,7 +4,13 @@ import { Deal } from "../@types/Deal";
 import { SoloExchangeContext } from "../context/SoloExchangeContext";
 
 const DealCard = ({ dealInfo }: { dealInfo: Deal }) => {
-  const { sendMoney } = useContext(SoloExchangeContext);
+  // const { sendMoney } = useContext(SoloExchangeContext);
+  const context = useContext(SoloExchangeContext);
+
+  if (!context) return null; // or return a fallback/loading message
+
+  const { sendMoney } = context;
+
   const navigate = useNavigate();
 
 
@@ -38,15 +44,21 @@ const DealCard = ({ dealInfo }: { dealInfo: Deal }) => {
 };
 
 const Market = () => {
-  const { currentAccount } = useContext(SoloExchangeContext);
+  // const { currentAccount } = useContext(SoloExchangeContext);
 
-  const {
-    deals,
-    getDeals,
-  }: {
-    deals: Deal[];
-    getDeals: () => Promise<void>;
-  } = useContext(SoloExchangeContext);
+  const context = useContext(SoloExchangeContext);
+
+  if (!context) {
+    return <div>Loading context...</div>;
+  }
+
+  const { currentAccount } = context;
+
+  if (!context) {
+    return <div>Loading context...</div>;
+  }
+
+  const { deals, getDeals }: { deals: Deal[]; getDeals: () => Promise<void> } = context;
 
   useEffect(() => {
     window.scrollTo(0, 0);

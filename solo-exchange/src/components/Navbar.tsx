@@ -5,8 +5,15 @@ import { BsCheckLg } from "react-icons/bs";
 import Logo from "../logo.svg";
 
 const Navbar = () => {
-  const { currentAccount, connectWallet, getDeals } =
-    useContext(SoloExchangeContext);
+  // const { currentAccount, connectWallet, getDeals } =
+  //   useContext(SoloExchangeContext);
+
+  const context = useContext(SoloExchangeContext);
+  
+  if (!context) return null; // or return a fallback/loading message
+  
+  const { currentAccount, connectWallet, getDeals } = context;
+
   return (
     <div className="navigation w-full font-sans text-xl z-10 navbar-bg text-white">
       <nav className="navbar navbar-expand navbar-dark bg-dark w-full">

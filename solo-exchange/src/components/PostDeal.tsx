@@ -103,7 +103,16 @@ const DealForm = () => {
 };
 
 const PostDeal = () => {
-  const { currentAccount } = useContext(SoloExchangeContext);
+  // const { currentAccount } = useContext(SoloExchangeContext);
+  
+  const context = useContext(SoloExchangeContext);
+
+  if (!context) {
+    return <div>Loading context...</div>;
+  }
+
+  const { currentAccount } = context;
+
   return (
     <div>
       <div className="p-48 sm:p-10 text-white post-deals-bg">
