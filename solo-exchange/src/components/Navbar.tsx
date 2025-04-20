@@ -5,6 +5,7 @@ import { BsCheckLg } from "react-icons/bs";
 import Logo from "../logo.svg";
 
 const Navbar = () => {
+  // const [currentAccount, setCurrentAccount] = useState("");
   // const { currentAccount, connectWallet, getDeals } =
   //   useContext(SoloExchangeContext);
 

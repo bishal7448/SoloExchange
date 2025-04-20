@@ -26,7 +26,7 @@ const Home = () => {
       <div className="home-bg text-center text-white">
         <div className="opacity-100 items-center justify-center sm:py-6 md:py-12 py-3">
           <div className="m-40">
-            <h1 className="text-7xl">Hermitrade</h1>
+            <h1 className="text-7xl">SoloExchange</h1>
             <h4 className="mt-2 text-xl">
               For <strong>all</strong> your electronic needs.
             </h4>
@@ -56,7 +56,7 @@ const Home = () => {
               networks”.
             </li>
             <li>4. Enable “Show test networks”.</li>
-            <li>5. Select the Goerli Test Network.</li>
+            <li>5. Select the Holesky Test Network.</li>
             <li>
               6. Connect the wallet with our site by clicking the “Connect Wallet”
               button at the top right.
