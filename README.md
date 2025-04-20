@@ -79,7 +79,7 @@ The project adopts a modern full-stack architecture:
   ```sh
   cd..
   cd facebook-dapp
-  npm run build
+  npm run dev
   ```
 ### Access the Application
 
