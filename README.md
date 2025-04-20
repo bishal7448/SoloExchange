@@ -55,7 +55,6 @@ The project adopts a modern full-stack architecture:
   cd smart_contracts
   npm install
   ```
-  ## If face some issue to run locally the freely connect with me - saha.bishal7676@gmail.com
 <!-- - **Set environment variables:**
   ```sh
   cd..
@@ -82,6 +81,8 @@ The project adopts a modern full-stack architecture:
   cd facebook-dapp
   npm run dev
   ```
+  
+  ## If face some issue to run locally the freely connect with me - saha.bishal7676@gmail.com
 ### Access the Application
 
 - Frontend: http://localhost:3000
