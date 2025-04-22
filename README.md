@@ -25,6 +25,8 @@ The project adopts a modern full-stack architecture:
 - *Storage*: IPFS for media & metadata
 - *Wallet Integration*: MetaMask / WalletConnect -->
 
+## Hey Hack4Bengal team due some issue in Netlify the deploy link isn't work properly (Unable to intaract with RPC url). So please host the webapp locally in your system. For this we give a quick start bellow. Our team try to fix the issue.
+
 ## 🔧 Quick Start
 
 ### Prerequisites
@@ -77,8 +79,10 @@ The project adopts a modern full-stack architecture:
   ```sh
   cd..
   cd facebook-dapp
-  npm run build
+  npm run dev
   ```
+  
+  ## If face some issue to run locally the freely connect with me - saha.bishal7676@gmail.com
 ### Access the Application
 
 - Frontend: http://localhost:3000
